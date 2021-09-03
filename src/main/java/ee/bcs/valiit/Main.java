@@ -7,17 +7,14 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String a = "Hello World";
-        System.out.println(a.length());
-        System.out.println(a.charAt(6));
-        System.out.println(a.substring(0,5));
-        String b = "Hello World";
-        if(a.equals(b)){
-            System.out.println("Õige");
+        int [] x = new int[20];
+
+        List a  = new ArrayList();
+        for (int i : x) {
+            a.add(i);
         }
-        if(a == b){
-            System.out.println("Vale");
-        }
+
+        a.toArray();
     }
 
 

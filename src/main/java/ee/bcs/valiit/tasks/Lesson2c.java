@@ -3,7 +3,7 @@ package ee.bcs.valiit.tasks;
 public class Lesson2c {
 
     public static void main(String[] args) {
-
+        System.out.println("vastus on " + sequence3n(10, 13));
     }
 
     // TODO
@@ -26,7 +26,14 @@ public class Lesson2c {
     //  kutsuge iga väärtuse korral välja meetodit getSeqLength
     //  salvestage maha kõige suurem ja funktsiooni lõpus tagastage leitud arv
     public static int sequence3n(int x, int y) {
-        return 0;
+        int pikkus = 0;
+        for(int i = x; i < y; i++) {
+            int getLength = getSeqLength(i);
+            if(getLength > pikkus) {
+                pikkus = getLength;
+            }
+        }
+        return pikkus;
     }
 
     // TODO 2
@@ -35,7 +42,13 @@ public class Lesson2c {
     //  x = 1 ->1
     //  x = 2 -> 2
     public static int getSeqLength(int x){
-        return 0;
+        int length = 1;
+        while(x != 1) {
+            x = nextElement(x);
+            length++;
+        }
+
+        return length;
     }
 
     // TODO 1
@@ -44,7 +57,12 @@ public class Lesson2c {
     //  x = 2 -> 1
     //  x = 3 -> 10
     public static int nextElement(int x){
-        return 0;
+        if(x % 2 == 0) {
+            x = x / 2;
+        } else {
+            x = x * 3 + 1;
+        }
+        return x;
     }
 
 }

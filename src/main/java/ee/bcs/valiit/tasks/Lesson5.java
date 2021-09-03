@@ -1,5 +1,9 @@
 package ee.bcs.valiit.tasks;
 
+import ee.bcs.valiit.tests.Konto;
+
+import java.util.*;
+
 public class Lesson5 {
     // TODO täienda Lesson4 nii, et sa hoiad Map-is konto balanssi asemel konto objekti
     //  1)
@@ -15,4 +19,5 @@ public class Lesson5 {
     // 4)
     // juhul kui konto on lukustatud ei tohi saada sellele kontole raha juurde kande ega kontolt raha ära võtta
     // ehk siis withdrawMoney, depositMoney ja transferMoney teenused ei tohi töötada
+
 }
